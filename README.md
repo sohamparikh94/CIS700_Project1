@@ -4,7 +4,9 @@ The data can be downloaded from the [CodaLab Worksheet](https://worksheets.codal
 
 The code expects pre-trained word-embedding file as a txt file with each line containing space separated tokens and the vector embeddings. e.g. for 3 dimensional word vectors, the file would look something like this:
 
-`the 0.323 0.23542 1.324
-and 0.2342 2.235 1..1352`
+```
+the 0.323 0.23542 1.324 
+and 0.2342 2.235 1..1352
+```
 
 To train the model, you can run `train.sh`. You can also modify the different parameters given in `train.sh`. To obtain different BLEU scores, uncomment the corresponding line of code in the function `get_metrics` in `seq2seq_copy.py`. 
