@@ -1,6 +1,6 @@
 import os
 import csv
-from modularized_copynet import CopyNetSeq2Seq
+from seq2seq_copy import Seq2SeqCopy
 import numpy as np
 from IPython import embed
 import torch
