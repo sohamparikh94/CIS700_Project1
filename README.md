@@ -10,3 +10,7 @@ and 0.2342 2.235 1..1352
 ```
 
 To train the model, you can run `train.sh`. You can also modify the different parameters given in `train.sh`. To obtain different BLEU scores, uncomment the corresponding line of code in the function `get_metrics` in `seq2seq_copy.py`. 
+
+#Acknowledgments
+
+The seq2seq_copy.py is inspired and adapted from the [CopyNetSeq2Seq](https://allenai.github.io/allennlp-docs/api/allennlp.models.encoder_decoders.html#allennlp.models.encoder_decoders.copynet_seq2seq.CopyNetSeq2Seq) source code
