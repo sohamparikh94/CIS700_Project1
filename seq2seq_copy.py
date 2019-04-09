@@ -19,7 +19,7 @@ from allennlp.nn.beam_search import BeamSearch
 
 logger = logging.getLogger(__name__)
 
-class CopyNetSeq2Seq(Model):
+class Seq2SeqCopy(Model):
 
     def __init__(self, vocab: Vocabulary, embedder: TextFieldEmbedder, encoder: Seq2SeqEncoder, attention: Attention, copy_token: str = "@COPY@", namespace: str = "tokens", target_embedding_dim: int = 50, decoder_output_dim = 100, max_decoding_steps: int=30, beam_size: int=4, initializer: InitializerApplicator = InitializerApplicator()):
 
