@@ -130,7 +130,7 @@ def main():
     attention = BilinearAttention(vector_dim = decoder_output_dim, matrix_dim = 2*encoder_output_dim, normalize=False)
 
 
-    model = CopyNetSeq2Seq(vocab, word_embeddings, encoder=encoder, attention= attention, target_embedding_dim = target_embedding_size, max_decoding_steps=max_decoding_steps, beam_size=beam_size,decoder_output_dim = decoder_output_dim)
+    model = Seq2SeqCopy(vocab, word_embeddings, encoder=encoder, attention= attention, target_embedding_dim = target_embedding_size, max_decoding_steps=max_decoding_steps, beam_size=beam_size,decoder_output_dim = decoder_output_dim)
 
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
